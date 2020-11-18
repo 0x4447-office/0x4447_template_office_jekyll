@@ -5,7 +5,7 @@ btn2_name: Learn more
 btn2_link: './#features'
 
 testimonials:
-  - image: img/brands/logotype/airbnb.svg
+  - image:
     color: '#FF5A5F'
     text1: >-
         "A very simple and modern template with a very harmonious color scheme. Also the additional plugins like
@@ -13,7 +13,7 @@ testimonials:
     text2: Bernhard
     text3: Dashkit customer
 
-  - image: img/brands/logotype/coinbase.svg
+  - image:
     color: '#0081C9'
     text1: >-
         “This has been my best theme purchase so far. Simple, beautiful, and I haven't had to make any major
