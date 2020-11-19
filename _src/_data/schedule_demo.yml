@@ -47,5 +47,5 @@ button:
   title: Send Request
 
 thanks : 
-  url : /schedule_demo/thankyou
+  url : /schedule_demo/thankyou.html
   text: Thanks, your demo is on the way to your inbox!
