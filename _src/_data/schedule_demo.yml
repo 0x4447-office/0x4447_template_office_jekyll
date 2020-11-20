@@ -42,7 +42,7 @@ check:
   label: I agree to receive emails
   required: required
   name: agree
-  checked: true
+  checked: false
 
 button:
   title: Send Request
