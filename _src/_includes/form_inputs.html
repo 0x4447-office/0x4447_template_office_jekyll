@@ -9,15 +9,15 @@
     </label>
 
     <!-- Input -->
-    <input type="{{i.type}}"
-      {%- if i.name == "aws_id" -%}
-        pattern="^\d{12}$"
-        minlength="12"
-      {%- else -%}
-        minlength="3"
-      {%- endif -%}
-      class="form-control" id="{{i.name}}" name="{{i.name}}" placeholder="{{i.placeholder}}" 
-      {{i.required}} />
+    <input
+      type="{{i.type}}"
+      {%- if i.name == "aws_id" -%}pattern="^\d{12}$" minlength="12"{%- else -%}minlength="3"{%- endif -%}
+      class="form-control"
+      id="{{i.name}}"
+      name="{{i.name}}"
+      placeholder="{{i.placeholder}}"
+      {{i.required}}
+    />
 
   </div>
   {%- endfor -%}

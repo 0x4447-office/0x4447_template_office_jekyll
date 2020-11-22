@@ -36,7 +36,7 @@
           {%- if i.link contains "http" -%}
           <a class="text-reset" href="{{item.link}}">{{i.title}}
             {%- else -%}
-            <a class="text-reset" href="{{site.url}}/{{item.link}}">{{item.title}}
+            <a class="text-reset" href="/{{item.link}}">{{item.title}}
             </a>
             {%- endif -%}
           </li>
