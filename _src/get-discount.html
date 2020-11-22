@@ -3,7 +3,6 @@ layout: default
 title: Get Discount
 permalink: /get-discount.html
 headline : You will get discount!
-permalink: /get_discount.html
 description: Our goal is to be as helpful as possible.
 ---
 
@@ -48,7 +47,7 @@ description: Our goal is to be as helpful as possible.
             </div>
 
             <div class="form-group mb-5">
-              <input type="checkbox" id="{{c.check.name}}" name="{{c.check.name}}" />
+              <input required type="checkbox" id="{{c.check.name}}" name="{{c.check.name}}"{%- if c.check.checked == true -%} checked{%- endif -%} />
               <label for="{{c.check.name}}">{{c.check.label}}</label>
             </div>
 
