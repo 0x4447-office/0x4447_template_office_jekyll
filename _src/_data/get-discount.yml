@@ -57,5 +57,5 @@ button:
   title: Send Request
 
 thanks : 
-  url : /get_discount/thankyou.html
+  url : /get-discount/thankyou.html
   text: You discount is 10%! 
