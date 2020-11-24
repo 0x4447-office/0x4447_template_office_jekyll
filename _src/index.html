@@ -52,15 +52,9 @@ description: >-
     </div>
   </div>
 
-  <!-- SUPPORT
+  <!-- PRICING
     ================================================== -->
-
-  {%- include support.html 
-      title = d.scal.title
-      text  = d.scal.text
-      list  = d.scal.list
-      badge = d.scal.badge
-      images= d.scal.images -%}
+  {%- include pricing.html -%}
 
   <!-- CURVE
             ================================================== -->
@@ -70,9 +64,15 @@ description: >-
     </div>
   </div>
 
-  <!-- PRICING
+  <!-- SUPPORT
     ================================================== -->
-{%- include pricing.html -%}
+
+  {%- include support.html 
+    title = d.scal.title
+    text  = d.scal.text
+    list  = d.scal.list
+    badge = d.scal.badge
+    images= d.scal.images -%}
 
   <!-- BRANDS
     ================================================== -->
