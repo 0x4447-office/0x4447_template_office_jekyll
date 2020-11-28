@@ -2,6 +2,9 @@ title: "0x4447"
 name    : David Gatti
 email   : david@0x4447.com
 description: >- # this means to ignore newlines until "baseurl:"
+product:
+  title: "OpenVPN Access Server"
+  tagline: "Unlimited Connected Devices"
 source: ./_src
 url: "" # https://example.com/
 google_analytics: UA-TODO
