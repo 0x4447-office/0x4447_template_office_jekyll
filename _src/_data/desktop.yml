@@ -21,6 +21,7 @@ testimonials:
     text2: Francisco
     text3: Dashkit customer
 hub:
+  badge: Features
   image: assets/img/screenshots/ui/dashkit-layered.png
   title: >-
     Use flexible components<br>
