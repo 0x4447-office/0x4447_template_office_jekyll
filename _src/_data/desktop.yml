@@ -28,25 +28,12 @@ hub:
   text: >-
     Dashkit styles and extends Bootstrap components, but also included brand new dashboard focused components.
 stats:
-  - title  : Components
-    values:
-    - val1: 0
-      val2: 100
-      val3: '+'
-
-  - title : Satisfaction
-    values:
-    - val1: 0.00
-      val2: 99.99
-      val3: '%'
-
-  - title  : Review Score
-    values:
-    - val1: 0
-      val2: 5.0
-      val3: /
-    - val1: 0
-      val2: 48
+  - title: Components
+    value: 100+
+  - title: Satisfaction
+    value: 99.99%
+  - title: Review Score
+    value: 4.8/5
 
 # scalable
 scal:
