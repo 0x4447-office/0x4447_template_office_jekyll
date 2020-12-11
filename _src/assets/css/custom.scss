@@ -68,3 +68,17 @@
 .shame__brand-image {
   max-height: 3em;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.shame__table-rounded {
+  border-collapse: separate !important;
+  border-radius: 1em;
+}
+
+.shame__table-rounded thead th:first-child { border-top-left-radius: 1em; }
+.shame__table-rounded thead th:last-child { border-top-right-radius: 1em; }
+.shame__table-rounded tbody tr:last-child td:first-child { border-bottom-left-radius: 1em; }
+.shame__table-rounded tbody tr:last-child td:last-child { border-bottom-right-radius: 1em; }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
