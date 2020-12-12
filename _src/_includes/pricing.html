@@ -68,8 +68,8 @@
   try {
     const numberElements = document.querySelectorAll('.js-render-currency-nice');
     numberElements.forEach(function(n) {
-      const value = parseInt(n.textContent);
-      const currency = value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0 });
+      const value = Number(n.textContent);
+      const currency = value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 2 });
       n.textContent = currency;
     });
   }
