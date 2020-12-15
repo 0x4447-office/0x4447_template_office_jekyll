@@ -43,8 +43,9 @@
             <tbody>
               {%- for n in (1..s) -%}
               <tr>
-                {%- for i in (0..c) -%}
-                <td>{{p.table[n].[i]}}</td>
+                <td>{{p.table[n].[0]}}</td>
+                {%- for i in (1..c) -%}
+                  <td class="js-render-currency-nice">{{p.table[n].[i]}}</td>
                 {%- endfor -%}
               </tr>
               {%- endfor -%}
@@ -62,3 +63,17 @@
 
   </div> <!-- / .container -->
 </section>
+
+<script>
+  try {
+    const numberElements = document.querySelectorAll('.js-render-currency-nice');
+    numberElements.forEach(function(n) {
+      const value = Number(n.textContent);
+      const currency = value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 2 });
+      n.textContent = currency;
+    });
+  }
+  catch(error) {
+    console.error(error);
+  }
+</script>
