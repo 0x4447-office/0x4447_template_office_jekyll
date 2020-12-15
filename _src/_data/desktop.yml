@@ -68,11 +68,11 @@ cust:
     Through the use of variables and a few config options you can completely change the look and feel of
           Dashkit. There's even an option to use an inverted color scheme.
 
-# mystery
-mystery:
+# feature
+feature:
   image1: assets/img/screenshots/desktop/dashkit-alt-dark.jpg
   image2: assets/img/devices/macbook.svg
-  badge: Mystery
+  badge: Feature
   title: >-
     Customize your product. <br>
           <span class="text-primary">There's even night mode</span>.
