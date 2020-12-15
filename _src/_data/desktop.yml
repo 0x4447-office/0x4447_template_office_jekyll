@@ -44,7 +44,7 @@ scal:
             <span class="text-success">will help you with anything</span>.
   text: >-
     We aim to take care of you. Need help with installation, find a bug, or just need a clarifiction about our
-            documentation? We'll be there to lend a helping hand.
+            documentation? <a href="https://support.0x4447.com/" class="text-success">We'll be there to lend a helping hand</a>.
   list:
     - name: Speedy
     - name: Global team
