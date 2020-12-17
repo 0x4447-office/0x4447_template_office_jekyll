@@ -14,10 +14,18 @@
           </p>
           <!-- Footer -->
           <p class="font-size-sm font-weight-bold mb-0">
-            {{b.text2}}
+            {%- if b.link -%}
+              <a href="{{ b.link.href }}" title="{{ b.link.title }}">{{ b.text2 }}</a>
+            {% else %}
+              {{ b.text2 }}
+            {% endif %}
           </p>
           <p class="font-size-sm text-muted mb-0">
-            {{b.text3}}
+            {%- if b.link -%}
+              <a href="{{ b.link.href }}" title="{{ b.link.title }}">{{ b.text3 }}</a>
+            {% else %}
+              {{ b.text3 }}
+            {% endif %}
           </p>
         </blockquote>
       </div>

@@ -12,6 +12,9 @@ testimonials:
               the statistics are great and fit perfectly into the overall picture."
     text2: Bernhard
     text3: Dashkit customer
+    link:
+      href: https://yahoo.com/
+      title: Go to Yahoo!
 
   - image:
     color: '#0081C9'
@@ -20,6 +23,9 @@ testimonials:
             changes. It plays well with my changes as well, which is really nice!”
     text2: Francisco
     text3: Dashkit customer
+    link:
+      href: https://google.com/
+      title: Go to Google
 hub:
   badge: Feature
   image: assets/img/screenshots/ui/dashkit-layered.png
