@@ -1,4 +1,4 @@
-image: assets/img/screenshots/desktop/dashkit.jpg
+image: img/samples/dashkit.jpg
 btn1_name: Subscribe Now
 btn1_link: '#!'
 btn2_name: Learn more
@@ -28,7 +28,7 @@ testimonials:
       title: Go to Google
 hub:
   badge: Feature
-  image: assets/img/screenshots/ui/dashkit-layered.png
+  image: assets/img/samples/dashkit-layered.png
   title: >-
     Use flexible components<br>
           <span class="text-primary">to build an app quickly.</span>
@@ -57,15 +57,15 @@ scal:
     - name: 5-star reviews
     - name: Good looking
   images:
-    - image: assets/img/photos/photo-10.jpg
-    - image: assets/img/photos/photo-12.jpg
-    - image: assets/img/photos/photo-9.jpg
-    - image: assets/img/photos/photo-11.jpg
+    - image: assets/img/samples/photo-10.jpg
+    - image: assets/img/samples/photo-12.jpg
+    - image: assets/img/samples/photo-9.jpg
+    - image: assets/img/samples/photo-11.jpg
 
 # scalable
 cust:
-  image1: assets/img/screenshots/desktop/dashkit-alt-dark.jpg
-  image2: assets/img/devices/macbook.svg
+  image1: assets/img/samples/dashkit-alt-dark.jpg
+  image2: assets/img/samples/macbook.svg
   badge: Feature
   title: >-
     Customize your product. <br>
@@ -76,8 +76,8 @@ cust:
 
 # feature
 feature:
-  image1: assets/img/screenshots/desktop/dashkit-alt-dark.jpg
-  image2: assets/img/devices/macbook.svg
+  image1: assets/img/samples/dashkit-alt-dark.jpg
+  image2: assets/img/samples/macbook.svg
   badge: Feature
   title: >-
     Customize your product. <br>
@@ -87,12 +87,12 @@ feature:
           Dashkit. There's even an option to use an inverted color scheme.
     
 cta:
-  bg_image: assets/img/patterns/pattern-1.svg
+  bg_image: assets/img/samples/pattern-1.svg
   badge: GET A DEMO
   title: Get Dashkit and save your time.
   text : >-
     Stop wasting time trying to do it the "right way" and build your app from scratch. Dashkit is faster, easier, and you still have complete control.
   button_link: >-
-    /schedule_demo.html
+    /schedule-demo.html
   button_text: Schedule a Demo
   demo: /demo

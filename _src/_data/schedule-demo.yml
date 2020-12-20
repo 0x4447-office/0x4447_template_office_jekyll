@@ -1,5 +1,5 @@
-image_mobile: assets/img/photos/photo-5.jpg
-image_desktop: assets/img/covers/cover-10.jpg
+image_mobile: assets/img/samples/photo-5.jpg
+image_desktop: assets/img/samples/cover-10.jpg
 image_alt: Our goal is to be as helpful as possible.
 product: Product
 method: get
@@ -48,5 +48,5 @@ button:
   title: Send Request
 
 thanks : 
-  url : /schedule_demo/thankyou.html
+  url : /schedule-demo/thankyou.html
   text: Thanks, your demo is on the way to your inbox!
