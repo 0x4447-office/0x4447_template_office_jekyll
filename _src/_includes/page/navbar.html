@@ -21,7 +21,7 @@
         <i class="fe fe-x"></i>
       </button>
 
-      {%- assign nav = site.data.navbar.navigation -%}
+      {%- assign nav = site.data.content.navbar.navigation -%}
       <!-- Navigation -->
       <ul class="navbar-nav ml-auto">
         {%- for i in nav -%}
@@ -37,7 +37,7 @@
       </ul>
 
       <!-- Button -->
-      {%- assign btn = site.data.navbar.navigation.button -%}
+      {%- assign btn = site.data.content.navbar.navigation.button -%}
       {%- if btn -%}
       <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="{{btn.link}}" target="_blank">
         {{btn.name}}

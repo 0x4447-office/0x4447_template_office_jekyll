@@ -12,7 +12,7 @@
 
         <!-- Image -->
         <div class="img-skewed img-skewed-left mb-8 mb-md-0">
-          <img src="data:image/png;base64,{%- include {{ site.data.desktop.image | append: '.base64' }} -%}" alt="..." class="screenshot img-fluid mw-md-130"
+          <img src="data:image/png;base64,{%- include {{ site.data.content.desktop.image | append: '.base64' }} -%}" alt="..." class="screenshot img-fluid mw-md-130"
             data-aos="img-skewed-item-left" data-aos-delay="100">
         </div>
 
@@ -28,7 +28,7 @@
         <p class="lead text-muted mb-6 mb-md-8">
           {{page.description}}
         </p>
-        {%- assign w = site.data.desktop -%}
+        {%- assign w = site.data.content.desktop -%}
         <!-- Buttons -->
         <a href="{{w.btn1_link}}" class="btn btn-primary lift">
           {{w.btn1_name}}

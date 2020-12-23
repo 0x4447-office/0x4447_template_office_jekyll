@@ -14,7 +14,7 @@ description: Our goal is to be as helpful as possible.
   <!-- CONTENT
     ================================================== -->
   <section>
-    {%- assign c = site.data.schedule-demo -%}
+    {%- assign c = site.data.content.schedule-demo -%}
     <!-- Content -->
     <div class="container d-flex flex-column">
       <div class="row align-items-center justify-content-between no-gutters min-vh-100">
@@ -84,7 +84,7 @@ description: Our goal is to be as helpful as possible.
 
 <script src="/assets/js/aws-sdk-2.656.0.min.js"></script>
 
-  {%- assign aws = site.data.aws -%}
+  {%- assign aws = site.data.content.aws -%}
 
 <script>
 
@@ -120,7 +120,7 @@ description: Our goal is to be as helpful as possible.
     let short_description = $('#{{c.textarea.name}}')[0].value;
     $('#{{c.textarea.name}}').attr("disabled", true);
 
-    {% for i in site.data.schedule-demo.inputs %}
+    {% for i in site.data.content.schedule-demo.inputs %}
     let {{i.name}} = $('#{{i.name}}')[0].value;
     $('#{{ i.name }}').attr('disabled', true);
     {% endfor %}
