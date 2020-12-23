@@ -3,16 +3,16 @@ text  : A better way to build.
 social:
   - title: youtube
     link : https://www.youtube.com/channel/UCgRepT4AO6mGsJaWsS_mHbA
-    image: /assets/img/samples/youtube.svg
+    image: /assets/img/samples/social/youtube.svg
   - title: github
     link : https://github.com/0x4447
-    image: /assets/img/samples/github.svg
+    image: /assets/img/samples/social/github.svg
   - title: linkedin
     link : https://www.linkedin.com/company/0x4447
-    image: /assets/img/samples/linkedin.svg
+    image: /assets/img/samples/social/linkedin.svg
   - title: twitter
     link : https://twitter.com/0x4447
-    image: /assets/img/samples/twitter.svg
+    image: /assets/img/samples/social/twitter.svg
 
 products_title: Products
 products:

@@ -28,7 +28,7 @@ testimonials:
       title: Go to Google
 hub:
   badge: Feature
-  image: assets/img/samples/dashkit-layered.png
+  image: assets/img/samples/content/dashkit-layered.png
   title: >-
     Use flexible components<br>
           <span class="text-primary">to build an app quickly.</span>
@@ -57,15 +57,15 @@ scal:
     - name: 5-star reviews
     - name: Good looking
   images:
-    - image: assets/img/samples/photo-10.jpg
-    - image: assets/img/samples/photo-12.jpg
-    - image: assets/img/samples/photo-9.jpg
-    - image: assets/img/samples/photo-11.jpg
+    - image: assets/img/samples/content/photo-10.jpg
+    - image: assets/img/samples/content/photo-12.jpg
+    - image: assets/img/samples/content/photo-9.jpg
+    - image: assets/img/samples/content/photo-11.jpg
 
 # scalable
 cust:
-  image1: assets/img/samples/dashkit-alt-dark.jpg
-  image2: assets/img/samples/macbook.svg
+  image1: assets/img/samples/content/dashkit-alt-dark.jpg
+  image2: assets/img/samples/content/macbook.svg
   badge: Feature
   title: >-
     Customize your product. <br>
@@ -76,8 +76,8 @@ cust:
 
 # feature
 feature:
-  image1: assets/img/samples/dashkit-alt-dark.jpg
-  image2: assets/img/samples/macbook.svg
+  image1: assets/img/samples/content/dashkit-alt-dark.jpg
+  image2: assets/img/samples/content/macbook.svg
   badge: Feature
   title: >-
     Customize your product. <br>
@@ -87,7 +87,7 @@ feature:
           Dashkit. There's even an option to use an inverted color scheme.
     
 cta:
-  bg_image: assets/img/samples/pattern-1.svg
+  bg_image: assets/img/samples/utility/pattern-1.svg
   badge: GET A DEMO
   title: Get Dashkit and save your time.
   text : >-
