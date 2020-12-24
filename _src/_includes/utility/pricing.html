@@ -1,0 +1,79 @@
+<section class="pt-10 pt-lg-9 pb-md-14 pb-lg-15 bg-white" id="Price">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8 text-center">
+        {%- assign p = site.data.content.pricing -%}
+        <!-- Badge -->
+        <span class="badge badge-pill badge-success-soft mb-3">
+          <span class="h6 text-uppercase">
+            {{p.badge}}
+          </span>
+        </span>
+
+        <!-- Heading -->
+        <h2>
+          {{p.title}}
+        </h2>
+
+        <!-- Text -->
+        <p class="lead text-gray-700">
+          {{p.text}}
+        </p>
+
+      </div>
+    </div> <!-- / .row -->
+
+    <!-- Picing table -->
+    <div class="card pricing-table bg-white">
+      <div class="card-body">
+        {{site.data.content.pricing_back.table.[0][0]]}}
+        <div class="table-responsive  table-fix" style="height: {{p.table_height}};">
+          <table class="table table-striped shame__table-rounded">
+            <thead>
+              <!-- rows  -->
+              {%- assign s = p.table | size | minus: 1 -%}
+              <!-- cols -->
+              {%- assign c = p.table[0].size | minus: 1 -%}
+              <tr>
+                {%- for i in (0..c) -%}
+                <th scope="col">{{p.table[0].[i]}}</th>
+                {%- endfor -%}
+              </tr>
+            </thead>
+            <tbody>
+              {%- for n in (1..s) -%}
+              <tr>
+                <td>{{p.table[n].[0]}}</td>
+                {%- for i in (1..c) -%}
+                  <td class="js-render-currency-nice">{{p.table[n].[i]}}</td>
+                {%- endfor -%}
+              </tr>
+              {%- endfor -%}
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center">
+          <small class="text-muted">
+            <a class="text-reset" href="/get-discount.html">You might be eligible for a discount.</a>
+          </small>
+        </p>
+
+      </div>
+    </div>
+
+  </div> <!-- / .container -->
+</section>
+
+<script>
+  try {
+    const numberElements = document.querySelectorAll('.js-render-currency-nice');
+    numberElements.forEach(function(n) {
+      const value = Number(n.textContent);
+      const currency = value.toLocaleString('en-US', { style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 2 });
+      n.textContent = currency;
+    });
+  }
+  catch(error) {
+    console.error(error);
+  }
+</script>

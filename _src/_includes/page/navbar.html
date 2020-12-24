@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="{{relative_url}}/index.html">
+      <img src="/assets/img/samples/company/logo_light.svg" class="navbar-brand-img" alt="0x4447, LLC." style="width: 200px;">
+    </a>
+
+    <!-- Toggler -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+
+      <!-- Toggler -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fe fe-x"></i>
+      </button>
+
+      {%- assign nav = site.data.content.navbar.navigation -%}
+      <!-- Navigation -->
+      <ul class="navbar-nav ml-auto">
+        {%- for i in nav -%}
+        <li class="nav-item">
+          {%- if i.link contains "http" -%}
+            <a class="nav-link" href="{{i.link}}">{{i.title}}</a>
+              {%- else -%}
+              <a class="nav-link" href="/{{i.link}}">{{i.title}}
+              </a>
+              {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+
+      <!-- Button -->
+      {%- assign btn = site.data.content.navbar.navigation.button -%}
+      {%- if btn -%}
+      <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="{{btn.link}}" target="_blank">
+        {{btn.name}}
+      </a>
+      {%- endif -%}
+
+    </div>
+
+  </div>
+</nav>

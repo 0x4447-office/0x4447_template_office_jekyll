@@ -1,0 +1,52 @@
+image_mobile: assets/img/samples/photo-5.jpg
+image_desktop: assets/img/samples/cover-10.jpg
+image_alt: Our goal is to be as helpful as possible.
+product: Product
+method: get
+inputs:
+  - name: firstName
+    caption: First Name
+    placeholder: Enter your First Name
+    required: required
+    type: text
+    order: order-1
+    
+  - name: lastName
+    caption: Last Name
+    placeholder: Enter your Last Name
+    required: required
+    type: text
+    order: order-2
+
+  - name: companyName
+    caption: Company Name
+    placeholder: Enter Company Name
+    required: required
+    type: text
+    order: order-3
+
+  - name: email
+    caption: Email
+    placeholder: Enter a valid email address
+    required: required
+    type: email
+    order: order-4
+
+textarea:
+  placeholder: Enter short company description
+  caption: Short company description
+  name: short_description
+  required: required  
+
+check:
+  label: I agree to receive emails
+  required: required
+  name: agree
+  checked: false
+
+button:
+  title: Send Request
+
+thanks : 
+  url : /schedule-demo/thankyou.html
+  text: Thanks, your demo is on the way to your inbox!
