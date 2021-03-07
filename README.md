@@ -2,6 +2,6 @@
 
 ## How to run locally
 
+- `gem install bundler`
 - `bundle install`
-- `gem install jekyll bundler`
 - `bundle exec jekyll serve`
