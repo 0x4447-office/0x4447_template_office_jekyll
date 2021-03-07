@@ -7,21 +7,34 @@
       <div class="col-12 col-md-6 col-lg-3">
         <!-- Brand -->
         <img src="/assets/img/samples/company/logo_light.svg" alt="0x4447, LLC." style="width: 200px;">
+        
         <!-- Text -->
-        <p class="text-gray-700 mb-2">
-          {{footer.text}}
+        <p class="text-gray-700 mb-2 text-center">
+          {{ footer.text }}
         </p>
 
         <!-- Social -->
-        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0 text-center">
           {%- for item in footer.social -%}
-          <li class="list-inline-item list-social-item mr-3">
-            <a href="{{item.link}}" class="text-decoration-none">
-              <img src="{{item.image}}" class="list-social-icon" alt="{{item.title}} icon">
-            </a>
+            <li
+              class="list-inline-item list-social-item {% if forloop.last %}mr-0{% else %}mr-3{% endif %}"
+            >
+              <a
+                href="{{ item.link }}"
+                class="text-decoration-none"
+                rel="external"
+                target=_blank
+              >
+                <img
+                  src="{{ item.image }}"
+                  class="list-social-icon"
+                  alt="{{ item.title }} icon"
+                />
+              </a>
             </li>
-            {%- endfor -%}
+          {%- endfor -%}
         </ul>
+
       </div>
 
       <div class="col-6 col-md-6 col-lg-3">
