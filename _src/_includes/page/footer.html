@@ -33,11 +33,17 @@
         <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
           {%- for item in site.data.content.navbar.navigation -%}
           <li class="mb-3">
-          {%- if i.link contains "http" -%}
-          <a class="text-reset" href="{{item.link}}">{{i.title}}
+            {%- if item.link contains "http" or item.link contains "https" -%}
+              <a
+                rel="external"
+                target="_blank"
+                class="text-reset"
+                href="{{ item.link }}"
+              >
+                {{ item.title }}
+              </a>
             {%- else -%}
-            <a class="text-reset" href="/{{item.link}}">{{item.title}}
-            </a>
+              <a class="text-reset" href="/{{ item.link }}">{{ item.title }}</a>
             {%- endif -%}
           </li>
           {%- endfor -%}

@@ -26,12 +26,18 @@
       <ul class="navbar-nav ml-auto">
         {%- for i in nav -%}
         <li class="nav-item">
-          {%- if i.link contains "http" -%}
-            <a class="nav-link" href="{{i.link}}">{{i.title}}</a>
-              {%- else -%}
-              <a class="nav-link" href="/{{i.link}}">{{i.title}}
-              </a>
-              {%- endif -%}
+          {%- if i.link contains "http" or i.link contains "https" -%}
+            <a
+              rel="external"
+              target="_blank"
+              class="nav-link"
+              href="{{ i.link }}"
+            >
+              {{ i.title }}
+            </a>
+          {%- else -%}
+            <a class="nav-link" href="/{{ i.link }}">{{ i.title }}</a>
+          {%- endif -%}
         </li>
         {%- endfor -%}
       </ul>
