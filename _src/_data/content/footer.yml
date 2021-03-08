@@ -14,7 +14,7 @@ social:
     link : https://twitter.com/0x4447
     image: /assets/img/samples/social/twitter.svg
 
-products_title: Products
+products_title: Other Products
 products:
   - title: OpenVPN Server
     link : "#!"
