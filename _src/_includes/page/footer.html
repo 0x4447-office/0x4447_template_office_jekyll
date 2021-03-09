@@ -6,18 +6,18 @@
 
       <div class="col-12 col-md-6 col-lg-3">
         <!-- Brand -->
-        <img src="/assets/img/samples/company/logo_light.svg" alt="0x4447, LLC." style="width: 200px;">
+        <img src="/assets/img/samples/company/logo_light.svg" alt="0x4447, LLC." style="width: 200px;" class="img-fluid mb-2">
         
         <!-- Text -->
-        <p class="text-gray-700 mb-2 text-center" style="width: 200px;">
+        <p class="text-gray-700 mb-2">
           {{ footer.text }}
         </p>
 
         <!-- Social -->
-        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0 text-center" style="width: 200px;">
+        <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
           {%- for item in footer.social -%}
             <li
-              class="list-inline-item list-social-item {% if forloop.last %}mr-0{% else %}mr-3{% endif %}"
+              class="list-inline-item list-social-item{% if forloop.last %}{% else %} mr-3{% endif %}"
             >
               <a
                 href="{{ item.link }}"
